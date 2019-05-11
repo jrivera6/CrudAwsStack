@@ -14,8 +14,13 @@ router.get('/crear', function(req, res, next) {
     controller.add(req, res);
 });
 
+
 router.post('/cargar', function(req, res, next) {
     controller.create(req, res)
+});
+
+router.post('/buscar', function(req, res, next) {
+    controller.search(req, res)
 });
 
 router.get('/update/:id', function(req, res, next) {
